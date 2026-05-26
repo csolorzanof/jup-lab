@@ -20,6 +20,8 @@ RUN wget https://repo.anaconda.com/archive/Anaconda3-2025.06-0-Linux-x86_64.sh -
 
 ENV PATH="/opt/anaconda/bin:$PATH"
 
+RUN conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main && \
+    conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
 # Install JupyterLab
 RUN conda install -y jupyterlab && \
     conda clean -afy
