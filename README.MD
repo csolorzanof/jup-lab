@@ -1,4 +1,4 @@
-#Initial folder setup
+# Initial folder setup
 Before running docker compose up create the folder structure to hold and persist the data
 of jupyterlab between container recreations and executions. 
 
